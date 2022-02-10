@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/*----------------GENERALES-------------*/
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 62.5%;
+    background-color: #242323 ;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+    
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.7rem;
+    text-align: justify;
+    overflow: hidden;
+}
+
+/*---------------- CLASES Y SELECTORES-------------*/
+
+/*HEADER*/
+
+header a img{
+    width: 10%;
+}
+
+.header__nav {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    left: 100vh;
+    bottom: 10vh;
+}
+
+.header__nav li{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+.header__nav li a{
+    color: #F5F5F5;
+    font-family: 'Montserrat 700', sans-serif;
+}
+
+.header__nav li:hover{
+    background-color: #3aaa35; 
+}
+
+/*MAIN*/
+
+.section__hero--right{
+    background-image: url("./img/jds-training.png");
+    margin-left: 5%;
+}
+
+.section__hero--left{
+    width: 40%;
+    height: 40%;
+    margin-left: 7%;
+    border: 3px #3aaa35 solid;
+}
+
+.section__hero--description{
+    padding: 2% 4%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+
+.section__hero--img {
+    padding: 2% 4%;
+    margin-left: 10%;
+}
+
+.section__hero--img img{
+    width: 15%;
+    height: 15%;
+}
+
+
+.section__div--networks {
+    padding: 2% 4%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.section__div--networks h5{
+    display: inline-block;
+}
+
+.section__div--data {
+    padding: 3% 4%;
+    text-align: center;
+    border: 1px #F5F5F5 solid;
+    background-color: #3aaa35; 
+}
+
+.section__div--data h3 {
+    font-size: 4rem;
+/*    color: #585857; */
+    color: #F5F5F5;
+}
+
+.section__div--data span {
+    font-size: 2rem;
+    color: #F5F5F5; 
+}
+
+/*FOOTER*/
+footer{
+    margin-top: 1%;  
+    margin-bottom: 1%; 
+}
+
+
+.footer--copyright{
+    display: inline-block;
+}
+
+.footer--credits{
+    display: inline-block;
+}
+
+/* PAGE - CONOCEME */
+/*
+.section--aboutMe{
+    margin-top: 5%;
+}*/
+
+
+/* PAGE - SERVICIOS */
+
+.section--serv h3 ,h2 , p{
+    color: #F5F5F5;
+    margin-bottom: 1%;
+}
+
+.section__div--serv{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*background-color: #0b5345;*/
+}
+
+
+/* PAGE - FAQ */
+
+
+.section--faq h2 , h3 , p{
+    color: #F5F5F5;
+    margin-bottom: 1%;
+}
+
+.section__div--faq{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+/* PAGE - GALERIA */
+
+.section__galery img{
+    margin: 2%;
+}
+
+
+/* PAGE - CONTACTO */
+
+.section--contactForm Form{
+    color: #F5F5F5;
+    font-size: 1.5rem;
+    background-color:black ;
+    border: 1px #F5F5F5 solid;
+    padding: 1%;
+}
+
+
+.section--contactForm input{
+    display:block;
+    margin-bottom: 1%;
+    background-color: #242323 ;
+}
+
+.section--contactForm label{
+    margin-bottom: 1%;
+}
+
+.section--contactForm .btn{
+    background-color: #3aaa35; 
+    font-size: 1.5rem;
+    margin-top: 1%;
+    padding: 0.5% 1.5%;
+    color: #F5F5F5;
+}

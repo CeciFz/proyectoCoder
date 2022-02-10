@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +12,39 @@
 </head>
 <body>
     <header>
-        <a href="index.html"> <img src="./IMG/JDS ICON.ico" alt="Logo"> </a> 
-        <nav>
+        <a href="index.html"> <img src="./img/jds-training.png" alt="Logo"> </a> 
+        <nav class = "header__nav" >
             <ul>
-                <li><a href="acercaDe.html">Acerca de</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="./pages/conoceme.html">Conoceme</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/galeria.html">Galeria</a></li>
+                <li><a href="./pages/faq.html">FAQ</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <H1>JDS Training</H1>
-                <span>SLOGAN</span>
-            </div>
-            <div>
-                <img src="" alt="Foto portada">
+        <section class="section__hero">
+            <div class="div___hero--princ">
+                <img class="section__hero--right" src="./img/jds-training.png" alt="logo">
+                <img class="section__hero--left" src="./img/portada-jds.jpeg" alt="foto-portada">
+            </div>  
+            <p class="section__hero--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quidem doloribus, dolor, eveniet omnis sapiente, ex tempore provident ab accusantium culpa. Tempora iste esse tenetur optio vero nisi unde, nobis molestias debitis, consectetur architecto similique, quod culpa vel dolorem quam adipisci a suscipit. Consequatur tenetur debitis dolorum ullam nobis fugiat.</p>
+            <div class="section__hero--img">
+                <img src="./img/training1.jpg" alt="Imagen-entrenamiento1">
+                <img src="./img/training2.jpg" alt="Imagen-entrenamiento2">
+                <img src="./img/training3.jpg" alt="Imagen-entrenamiento3">
+                <img src="./img/training4.jpg" alt="Imagen-entrenamiento4">
+                <img src="./img/training5.jpg" alt="Imagen-entrenamiento5">
             </div>
         </section>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quidem doloribus, dolor, eveniet omnis sapiente, ex tempore provident ab accusantium culpa. Tempora iste esse tenetur optio vero nisi unde, nobis molestias debitis, consectetur architecto similique, quod culpa vel dolorem quam adipisci a suscipit. Consequatur tenetur debitis dolorum ullam nobis fugiat.</p>
-            <img src="" alt="Imagen entrenamiento1">
-            <img src="" alt="Imagen entrenamiento2">
-            <img src="" alt="Imagen entrenamiento3">
-            <img src="" alt="Imagen entrenamiento4">
-        </section>
-        <section>
-            <div>
-                <a href="#">Instragram</a>
-                <a href="#">Contacto</a>
-                <a href="#">Whatsapp</a>
+        <section class="section__jds">
+            <div class="section__div--networks">
+                <h5><a href="#">Instragram</a></h5>
+                <h5><a href="#">Contacto</a></h5>
+                <h5><a href="#">Whatsapp</a></h5>
             </div>
-            <div>
+            <div class="section__div--data">
                 <h3>JORGE DAMIAN SABAN</h3>
                 <span>Entrenador personal</span>
             </div>
@@ -50,10 +52,10 @@
 
     </main>
     <footer>
-        <div>
+        <div class="footer--copyright">
             Copyright © 2022 
         </div>
-        <div>
+        <div  class="footer--credits">
             Desarrollado por 
             <a href="#">@Ceci</a>
         </div>
