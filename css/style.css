@@ -11,8 +11,6 @@ html{
     text-decoration: none;
     font-size: 62.5%;
     background-color: #242323 ;
-    padding-left: 2%;
-    padding-right: 2%;
 }
     
 
@@ -21,188 +19,371 @@ a {
 }
 
 h2{
+    color: #F5F5F5;
     font-size: 4rem;
+    background-color: #3aaa35; 
+    border-style: ridge;
+    padding: 1rem;
 }
 
 h3{
+    color:#F5F5F5;
     font-size: 2.5rem;
 }
 
-p{
+p {
+    color: #F5F5F5;
     font-size: 1.7rem;
     text-align: justify;
     overflow: hidden;
 }
 
+span{
+    color: #F5F5F5;
+}
+
 /*---------------- CLASES Y SELECTORES-------------*/
+
+/* INDEX */   
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
 
 /*HEADER*/
 
-header a img{
-    width: 10%;
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(36, 35, 35, 0.95);
+    box-shadow: 0px 0px 4px 1px #F5F5F5;
 }
 
-.header__nav {
-    display: inline-block;
-    width: 50%;
-    position: relative;
-    left: 100vh;
-    bottom: 10vh;
+header .header__logo{
+    width: 130px;
+    margin: 1% 0% 1% 4%;
+}
+
+header a img{
+    width: 100%;
+    padding: 2%;
+}
+
+header nav{
+    flex-basis: 80%;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 4%;
 }
 
 .header__nav li{
     list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    font-size: 2rem;
-    margin: 1%;
     padding: 1%;
-    border-radius: 5%;
 }
 
 .header__nav li a{
     color: #F5F5F5;
-    font-family: 'Montserrat 700', sans-serif;
+    font-size: 2rem;
+}
+
+.header__nav li #Inicio{
+    border-bottom: solid 1px #3aaa35;
+}
+
+.header__nav li #Conoceme{
+    border-bottom: solid 1px #3aaa35;
+}
+
+.header__nav li #Servicios{
+    border-bottom: solid 1px #3aaa35;
+}
+
+.header__nav li #Galeria{
+    border-bottom: solid 1px #3aaa35;
+}
+
+.header__nav li #FAQ{
+    border-bottom: solid 1px #3aaa35;
+}
+
+.header__nav li #Contacto{
+    border-bottom: solid 1px #3aaa35;
 }
 
 .header__nav li:hover{
     background-color: #3aaa35; 
+    border-radius: 5%;
 }
 
 /*MAIN*/
 
+.div___hero--princ{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #242323;
+    padding-top: 2rem;
+}
+
 .section__hero--right{
-    background-image: url("./img/jds-training.png");
-    margin-left: 5%;
+    max-width: 40%;
+    min-width: 336px;
 }
 
 .section__hero--left{
-    width: 40%;
-    height: 40%;
-    margin-left: 7%;
-    border: 3px #3aaa35 solid;
+    max-width: 40%;
+    min-width: 336px;
+    box-shadow: 0px 0px 4px 2px #F5F5F5;
 }
 
 .section__hero--description{
     padding: 2% 4%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    font-size: 2.6rem;
+    margin-bottom: 3%;
+    font-size: 2.2rem;
     text-align: center;
+    line-height: 1.7;
 }
 
 
 .section__hero--img {
-    padding: 2% 4%;
-    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
 }
 
 .section__hero--img img{
-    width: 15%;
-    height: 15%;
+    width: 15rem;
 }
 
+.section__jds{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 2%;
+}
 
 .section__div--networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2% 4%;
-    margin-bottom: 5%;
-    text-align: center;
+    margin: 2% 0%;
+    gap: 2rem;
+}
+.section__div--networks a{
+    margin-top: 15%;
+    width: 3rem;
 }
 
-.section__div--networks h5{
-    display: inline-block;
+.section__div--networks img{
+    width: 100%;
 }
 
 .section__div--data {
     padding: 3% 4%;
     text-align: center;
-    border: 1px #F5F5F5 solid;
-    background-color: #3aaa35; 
+    border: 1px #0c230b solid;
+    background-color: rgba(58, 170, 53, 0.7);
 }
 
 .section__div--data h3 {
     font-size: 4rem;
-/*    color: #585857; */
-    color: #F5F5F5;
 }
 
 .section__div--data span {
     font-size: 2rem;
-    color: #F5F5F5; 
 }
 
 /*FOOTER*/
 footer{
-    margin-top: 1%;  
-    margin-bottom: 1%; 
+    padding: 1% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #000600;
+    color: #F5F5F5;
+    font-size: small;
 }
 
-
-.footer--copyright{
-    display: inline-block;
-}
-
-.footer--credits{
-    display: inline-block;
-}
 
 /* PAGE - CONOCEME */
-/*
-.section--aboutMe{
-    margin-top: 5%;
-}*/
 
+.section--aboutMe{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 4rem 1rem 4rem;
+    /*max-height: 80vh;*/
+}
+
+.section--aboutMe img{
+    /*max-height: 100%;*/
+    max-width: 301px;
+    max-height: 423px;
+    box-shadow: 0px 0px 2px 2px #F5F5F5;
+}
+
+.section--aboutMeTexto {
+    padding: 2rem;
+    line-height: 1.6;
+    border: #F5F5F5 solid;
+}
+
+.section--aboutMeTexto h2{
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.section--aboutMeTexto span{    
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
 
 /* PAGE - SERVICIOS */
 
-.section--serv h3 ,h2 , p{
-    color: #F5F5F5;
-    margin-bottom: 1%;
+
+.section--serv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    min-height: 80vh;
+    grid-template-areas:"titulo titulo"
+                        "funcional calistenia"
+                        "box defensa";
+    margin: 0% 2% 0% 2%;
+    grid-gap: 1rem;
 }
 
 .section__div--serv{
-    margin-top: 1%;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.titulo{
+    grid-area:titulo;
+}
+
+.funcional{
+    grid-area:funcional;
+}
+
+.calistenia{
+    grid-area:calistenia;
+}
+
+.defensa{
+    grid-area:defensa;
+}
+
+.box{
+    grid-area:box;
+}
+
+.section--serv h3 {  
     margin-bottom: 1%;
-    /*background-color: #0b5345;*/
+}
+
+.section--serv h2{
+    margin-bottom: 1%;
+}
+
+.section__div--serv span {
+    font-size: 1.7rem;
 }
 
 
 /* PAGE - FAQ */
 
+.section--faq{
+    padding: 2% 4%;
+}
 
-.section--faq h2 , h3 , p{
-    color: #F5F5F5;
+.section--faq h2{
+    margin-bottom: 1%;
+}
+
+.section--faq h3 {
+    margin-bottom: 1%;
+}
+
+.section--faq p {
     margin-bottom: 1%;
 }
 
 .section__div--faq{
     margin-top: 1%;
     margin-bottom: 1%;
+    padding: 0% 2%;
 }
 
 
 /* PAGE - GALERIA */
 
-.section__galery img{
-    margin: 2%;
+.section--galery{
+    padding: 2% 4%;
+}
+
+.section--galery img{
+    margin: 1%;
+    /*padding: 0% 2%;*/
+}
+
+.section--galery iframe{
+    width: 100%;
 }
 
 
 /* PAGE - CONTACTO */
+
+.section--contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+.section--contactForm h2{
+    margin-bottom: 1rem;
+}
+
+.section--contactForm span{
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+}
 
 .section--contactForm Form{
     color: #F5F5F5;
     font-size: 1.5rem;
     background-color:black ;
     border: 1px #F5F5F5 solid;
-    padding: 1%;
+    padding: 2%;
 }
 
 
-.section--contactForm input{
+.section--contactForm input , textarea{
     display:block;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     background-color: #242323 ;
+    color: #F5F5F5;
 }
 
 .section--contactForm label{
@@ -215,4 +396,162 @@ footer{
     margin-top: 1%;
     padding: 0.5% 1.5%;
     color: #F5F5F5;
+}
+
+
+/*----------------MEDIA QUERIES-------------*/
+
+@media screen and (max-width: 768px) {
+
+    header{
+        justify-content: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    /*INDEX*/
+    .div___hero--princ{
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .section__hero--right{
+        max-width: 80%;
+        min-width: 336px;
+    }
+    
+    .section__hero--left{
+        max-width: 80%;
+        min-width: 336px;
+    }
+
+    /*SERVICIOS*/
+    .section--serv{
+        grid-template-columns: 1fr;
+        grid-template-areas:"titulo"
+                            "funcional"
+                            "calistenia"
+                            "box"
+                            "defensa";
+    }
+    .section__div--serv{
+        padding: 2rem 2rem 0 2rem;
+        text-align: center;
+    }
+    .section--serv{
+        margin-bottom: 2rem;
+    }
+
+    /* PAGE - CONOCEME */
+
+    .section--aboutMe{
+        padding: 2rem 0;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    /*GENERALES*/
+    
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 2.3rem;
+        border-bottom: #F5F5F5 solid 1px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+}
+    
+/* NAV */
+
+    header a img{
+        display: none;
+    }
+
+    header nav {
+        flex-basis: 100%;
+    }
+
+    .header__nav li{
+        margin: 1%;
+    }
+
+    .header__nav li a{
+        font-size: 1.7rem;
+    }
+    
+
+    /* INDEX */
+    .div___hero--princ{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__hero--right{
+        min-width: 260px;
+    }
+    
+    .section__hero--left{
+        min-width: 260px;
+    }
+
+    .section__hero--description {
+        font-size: 1.5rem;
+        padding: 5% 3%;
+        /*margin: 3% 0%;*/
+    }
+
+    .section__div--data {
+        margin: 5% 1% 3% 1%;
+    }
+
+    .section__div--data h3{
+        font-size: 2rem;
+    }
+
+    .section__div--data span{
+        font-size: 1rem;
+    }
+
+    .section__div--networks a{
+        margin-top: 4%;
+        width: 8%;
+    }
+    
+    footer{
+        font-size:smaller;
+    }
+
+    .section--aboutMe{
+        margin: 1rem 0;
+    }
+
+    .section--aboutMe img{
+        max-width: 280px;
+    }
+    
+    .section--aboutMeTexto{
+        padding: 1rem;
+        margin: 0 2rem;
+    }
+
+    .section--aboutMe img{
+        max-width: 280px;
+    }
+
+    .section--contactForm Form{
+        margin-top: 1.5rem;
+    }
+        
 }

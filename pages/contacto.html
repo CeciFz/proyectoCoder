@@ -12,20 +12,21 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"> <img src="../img/jds-training.png" alt="Logo"> </a> 
+        <a href="../index.html" class="header__logo"> <img src="../img/jds-training-icon.png" alt="Logo"> </a> 
         <nav class = "header__nav" >
             <ul>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="conoceme.html">Conoceme</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="galeria.html">Galería</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" id="Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section class="section--contactForm">
         <h2>Contacto</h2>
-        <p>Dejame tu consulta!</p>
+        <span>Dejame tu consulta!</span>
     </div>
         <form action="" method="" enctype="" >
             <label for="Nombre"> Nombre: </label>
@@ -35,7 +36,7 @@
             <label for="Teléfono">Teléfono: </label>
                 <input type="tel" name="TEL" id="Teléfono" >
             <label for="Mensaje">Mensaje:</label>
-                <input type="text" name="MSJ" id="Mensaje" required>
+                <textarea name="MSJ" id="Mensaje" cols="30" rows="5"required></textarea>
             <input class = "btn" type="submit" value="ENVIAR">
         </form>
     </section>
