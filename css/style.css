@@ -31,6 +31,12 @@ h3{
     font-size: 2.5rem;
 }
 
+h4{
+    color:#F5F5F5;
+    font-size: 2rem;
+    ;
+}
+
 p {
     color: #F5F5F5;
     font-size: 1.7rem;
@@ -130,24 +136,34 @@ header nav ul {
 
 .div___hero--princ{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     background-color: #242323;
-    padding-top: 2rem;
+    padding-top: 2rem;*/
+    justify-content: center;
+    background-image: url(../img/fondoContacto.jpeg);
+    background-size: cover;
+    background-position: left;
 }
+
+
 
 .section__hero--right{
     max-width: 40%;
     min-width: 336px;
+    background-color: rgba(36, 35, 35, 0.78);
+    border-radius: 70%;
+    padding: 1rem;
+    border-top-right-radius: initial;   
 }
-
+/*
 .section__hero--left{
     max-width: 40%;
     min-width: 336px;
     box-shadow: 0px 0px 4px 2px #F5F5F5;
 }
-
+*/
 .section__hero--description{
     padding: 2% 4%;
     margin-bottom: 3%;
@@ -309,46 +325,86 @@ footer{
 }
 
 
-/* PAGE - FAQ */
-
-.section--faq{
-    padding: 2% 4%;
-}
-
-.section--faq h2{
-    margin-bottom: 1%;
-}
-
-.section--faq h3 {
-    margin-bottom: 1%;
-}
-
-.section--faq p {
-    margin-bottom: 1%;
-}
-
-.section__div--faq{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 0% 2%;
-}
-
-
 /* PAGE - GALERIA */
 
 .section--galery{
-    padding: 2% 4%;
+    padding: 2rem 4rem;
 }
 
-.section--galery img{
-    margin: 1%;
-    /*padding: 0% 2%;*/
+.section__div--galery{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows: auto; 
+    grid-auto-flow: dense;
+    gap: 1rem;
+}
+/*
+.section__div--galeryImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.section__div--galeryImg img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    padding: 0.1rem;
 }
 
-.section--galery iframe{
-    width: 100%;
+.cuadrado{
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+.horizontal{
+    grid-column: span 2;
 }
 
+.vertical{
+    grid-row: span 2;
+}
+
+.green {
+    background-color: #5eff56;
+}
+
+.burgundy{
+    background-color: #5e2121;
+}
+
+.lightblue{
+    background-color: #32b3f8d7;
+}
+
+.orange{
+    background-color: #f88832d7;
+}
+
+.white{
+    background-color: #ffffffd7;
+}
+
+.black{
+    background-color: #000600;
+}
+
+.pink{
+    background-color: #f36fef;
+}
+
+/* PAGE - FAQ */
+
+.section--faq{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__div--faq{
+    margin: 1rem 0;
+    padding: 1rem;
+}
 
 /* PAGE - CONTACTO */
 
@@ -357,8 +413,9 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2%;
-    margin-bottom: 2%;
+    padding: 2rem 0;
+    background-image: url(../img/fondoContacto.jpeg);
+    background-size: cover;
 }
 
 .section--contactForm h2{
@@ -450,6 +507,31 @@ footer{
         padding: 2rem 0;
         flex-direction: column-reverse;
     }
+    
+    /* PAGE - FAQ */
+    .section--faq{
+        text-align: center;
+    }
+
+    .section__div--faq {
+        text-align: center;
+    }
+
+    /* PAGE - GALERIA */
+
+    .section--galery{
+        padding: 1rem 1rem;
+    }     
+    
+    .section__div--galery{
+        margin-top: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .cuadrado{
+        grid-column: span 1; 
+        grid-row: span 1; 
+    }
 }
 
 
@@ -509,7 +591,6 @@ footer{
     .section__hero--description {
         font-size: 1.5rem;
         padding: 5% 3%;
-        /*margin: 3% 0%;*/
     }
 
     .section__div--data {
@@ -553,5 +634,28 @@ footer{
     .section--contactForm Form{
         margin-top: 1.5rem;
     }
-        
+
+    /* PAGE - GALERIA */
+    .vertical{
+        grid-row: span 1; 
+    }
+    
+    /* PAGE - FAQ */
+    .section--faq{
+        padding: 1rem 1rem;
+    }
+
+    .section__div--faq h2{
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* PAGE - GALERIA */
+
+    .horizontal{
+        grid-column: span 1; 
+    }
+
 }
