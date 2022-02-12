@@ -140,11 +140,10 @@ header nav ul {
 
 .div___hero--princ{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/FondoParque.svg);
+    background-image: url(../img/fondoParque.png);
     background-size: 100%;
     background-position-y: 18%;
     max-height: 84vh;
@@ -153,7 +152,7 @@ header nav ul {
 
 
 
-.section__hero--right{
+.section__hero--logo{
     max-width: 40%;
     min-width: 336px;
     align-self: first baseline;
@@ -162,13 +161,7 @@ header nav ul {
     padding: 1rem;
     border-top-right-radius: initial;*/   
 }
-/*
-.section__hero--left{
-    max-width: 40%;
-    min-width: 336px;
-    box-shadow: 0px 0px 4px 2px #F5F5F5;
-}
-*/
+
 .section__hero--description{
     padding: 2% 4%;
     margin-bottom: 3%;
@@ -417,7 +410,7 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    background-image: url(../img/FondoParque.svg);
+    background-image: url(../img/fondoParque.png);
     background-size: cover;
     background-position: left;
 }
@@ -493,41 +486,43 @@ footer{
  * animation rotate-vert-center
  * ----------------------------------------
  */
- .rotate-vert-center {
+.rotate-vert-center {
 	-webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
-	        animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
+	animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
 }
 
 
- @-webkit-keyframes rotate-vert-center {
+@-webkit-keyframes rotate-vert-center {
     0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
     }
     100% {
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
     }
-  }
-  @keyframes rotate-vert-center {
+}
+
+@keyframes rotate-vert-center {
     0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
     }
     100% {
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
     }
-  }
+}
 
 
 
 /*----------------MEDIA QUERIES-------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 829px) { /* 768 */
 
     header{
         justify-content: center;
+        padding-bottom: 1.5rem;
     }
 
     header nav ul {
@@ -536,18 +531,14 @@ footer{
 
     /*INDEX*/
     .div___hero--princ{
-        padding-top: 0;
-        padding-bottom: 2rem;
-    }
+        background-position-y: inherit;
+        background-size: cover;
+        max-height: 55vh;    }
     
-    .section__hero--right{
+    .section__hero--logo{
         max-width: 80%;
         min-width: 336px;
-    }
-    
-    .section__hero--left{
-        max-width: 80%;
-        min-width: 336px;
+        align-self: center;
     }
 
     /*SERVICIOS*/
@@ -646,17 +637,13 @@ footer{
         align-items: center;
     }
 
-    .section__hero--right{
-        min-width: 260px;
-    }
-    
-    .section__hero--left{
+    .section__hero--logo{
         min-width: 260px;
     }
 
     .section__hero--description {
         font-size: 1.5rem;
-        padding: 5% 3%;
+        padding: 0rem 3rem 3rem 3rem;
     }
 
     .section__div--data {
@@ -678,6 +665,7 @@ footer{
     
     footer{
         font-size:smaller;
+        padding: 1% 2%;
     }
 
     .section--aboutMe{
@@ -715,6 +703,11 @@ footer{
         padding: 1rem;
         margin: 0 1rem;
     }
+
+    .section__div--contactForm{
+        gap: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
