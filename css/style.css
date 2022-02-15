@@ -65,10 +65,6 @@ body{
 /*HEADER*/
 
 .header{
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;*/
     position: sticky;
     top: 0;
     background-color: rgba(36, 35, 35, 0.95) ;
@@ -79,13 +75,13 @@ body{
 }
 
 #navbarNav{
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 
 .header .header__logo{
     width: 130px;
     margin-bottom: 1rem;
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 .header .header__logo img{
@@ -95,37 +91,17 @@ body{
 
 .nav-link{
     color: #F5F5F5 !important;
-    font-size: 2rem;
+    font-size: 1.85rem;
 }
 
 .navbar-nav{
     gap: 1.2rem;
 }
 
-.navbar-nav .nav-item #Inicio{
-    border-bottom: solid 1px #3aaa35;
+.navbar-nav .nav-item .nav--hover{
+    /*border-bottom: solid 1px #3aaa35;*/
+    color: #3aaa35 !important;
 }
-
-.navbar-nav .nav-item #Conoceme{
-    border-bottom: solid 1px #3aaa35;
-}
-
-.navbar-nav .nav-item #Servicios{
-    border-bottom: solid 1px #3aaa35;
-}
-
-.navbar-nav .nav-item #Galeria{
-    border-bottom: solid 1px #3aaa35;
-}
-
-.navbar-nav .nav-item #FAQ{
-    border-bottom: solid 1px #3aaa35;
-}
-
-.navbar-nav .nav-item #Contacto{
-    border-bottom: solid 1px #3aaa35;
-}
-
 .navbar-nav .nav-item:hover{
     background-color: #3aaa35; 
     border-radius: 5%;
@@ -517,28 +493,47 @@ footer{
 
 /*----------------MEDIA QUERIES-------------*/
 
-@media screen and (max-width: 829px) { /* 768 */
-/*
-    .header{
-        justify-content: center;
-        padding-bottom: 1.5rem;
+@media screen and (max-width: 830px) {
+
+    #navbarNav {
+        margin-right: 2rem;
     }
 
-    header nav ul {
-        justify-content: center;
-    }*/
+    .nav-link{
+        font-size: 1.7rem;
+    }
 
+    .header .header__logo {
+        width: 110px;
+        margin-left: 2rem;
+    }
+
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+    }
+}
+
+
+@media screen and (max-width: 767.98px) {  
     /*INDEX*/
+    
+    .header{
+        position: inherit;
+    }
+    
+    #navbarNav {
+        margin-right: 0%;
+    }
 
     .navbar-collapse {
         text-align: center;
+        margin-bottom: 2rem;
     }
 
-    .navbar-nav {
-        display: inline-block;
-        padding-bottom: 2rem
+    .navbar-toggler {
+        margin-bottom: 1.5rem;
     }
-
+    /*HERO*/
     .div___hero--princ{
         background-position-y: inherit;
         background-size: cover;
@@ -548,6 +543,19 @@ footer{
         max-width: 80%;
         min-width: 336px;
         align-self: center;
+    }
+
+    .section__hero--description {
+        font-size: 1.7rem;
+        padding: 3rem;
+    }
+
+    .section__div--data h3{
+        font-size: 3rem;
+    }
+
+    .section__div--data span{
+        font-size: 2rem;
     }
 
     /*SERVICIOS*/
@@ -601,10 +609,10 @@ footer{
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {/*425*/
 
     /*GENERALES*/
-    
+    /*
     h2 {
         font-size: 3rem;
         text-align: center;
@@ -618,37 +626,8 @@ footer{
     p {
         font-size: 1.5rem;
         text-align: center;
-}
+}*/
     
-/* NAV */
-
-    #navbarNav {
-        margin-right: 0%;
-    }
-
-    .nav-link{
-        font-size: 1.7rem;
-    }
-
-    .header .header__logo {
-        width: 110px;
-        margin-left: 2rem;
-    }
-    
-    .header{
-        margin-bottom: 2rem;
-    }
-
-    .navbar-toggler {
-        margin-bottom: 1.5rem;
-    }
-
-    .navbar-nav .nav-item:hover{
-        color: #3aaa35;
-        background-color: inherit;
-    }
-    
-
     /* INDEX */
     .div___hero--princ{
         display: flex;
@@ -662,7 +641,7 @@ footer{
 
     .section__hero--description {
         font-size: 1.5rem;
-        padding: 0rem 3rem 3rem 3rem;
+        padding: 2.5rem;
     }
 
     .section__div--data {
