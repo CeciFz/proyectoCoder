@@ -7,12 +7,14 @@
 /*----------------GENERALES-------------*/
 
 html{
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
     background-color: #242323 ;
 }
-    
 
 a {
     text-decoration: none;
@@ -62,79 +64,77 @@ body{
 
 /*HEADER*/
 
-header{
-    display: flex;
+.header{
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
     position: sticky;
     top: 0;
-    background-color: rgba(36, 35, 35, 0.95);
-    background-image: linear-gradient(to right, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 100%);
+    background-color: rgba(36, 35, 35, 0.95) ;
+    background-image: linear-gradient(to left, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 100%);
     background-size: 100% 7%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
-header .header__logo{
-    width: 130px;
-    margin: 1% 0% 1% 4%;
+#navbarNav{
+    margin-right: 4rem;
 }
 
-header a img{
+.header .header__logo{
+    width: 130px;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+
+.header .header__logo img{
     width: 100%;
     padding: 2%;
 }
 
-header nav{
-    flex-basis: 80%;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-right: 4%;
-}
-
-.header__nav li{
-    list-style-type: none;
-    padding: 1%;
-}
-
-.header__nav li a{
-    color: #F5F5F5;
+.nav-link{
+    color: #F5F5F5 !important;
     font-size: 2rem;
 }
 
-.header__nav li #Inicio{
+.navbar-nav{
+    gap: 1.2rem;
+}
+
+.navbar-nav .nav-item #Inicio{
     border-bottom: solid 1px #3aaa35;
 }
 
-.header__nav li #Conoceme{
+.navbar-nav .nav-item #Conoceme{
     border-bottom: solid 1px #3aaa35;
 }
 
-.header__nav li #Servicios{
+.navbar-nav .nav-item #Servicios{
     border-bottom: solid 1px #3aaa35;
 }
 
-.header__nav li #Galeria{
+.navbar-nav .nav-item #Galeria{
     border-bottom: solid 1px #3aaa35;
 }
 
-.header__nav li #FAQ{
+.navbar-nav .nav-item #FAQ{
     border-bottom: solid 1px #3aaa35;
 }
 
-.header__nav li #Contacto{
+.navbar-nav .nav-item #Contacto{
     border-bottom: solid 1px #3aaa35;
 }
 
-.header__nav li:hover{
+.navbar-nav .nav-item:hover{
     background-color: #3aaa35; 
     border-radius: 5%;
 }
+
+.navbar-toggler {
+    font-size: 2.25rem;
+    margin-right: 4rem;
+}  
 
 /*MAIN*/
 
