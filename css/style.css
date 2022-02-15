@@ -214,37 +214,39 @@ footer{
 }
 
 /* PAGE - CONOCEME */
-
-.section--aboutMe{
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    padding: 0 4rem 1rem 4rem;
-    justify-content: center;
-    /*max-height: 80vh;*/
+.section--aboutMe .container{
+    min-height: 70vh;
 }
 
-.section--aboutMe img{
-    /*max-height: 100%;*/
-    max-width: 301px;
-    max-height: 423px;
+.section--aboutMe .row{
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.section--aboutMe .row .div--aboutMeImg{
+    flex-basis: 30%;
+}
+
+.section--aboutMe .row .div--aboutMeImg img{
     box-shadow: 0px 0px 2px 2px #F5F5F5;
 }
-
-.section--aboutMeTexto {
+.section--aboutMe .row .div--aboutMeTexto {
     padding: 2rem;
     line-height: 1.6;
     border: #F5F5F5 solid;
     flex-basis: 60%;
 }
 
-.section--aboutMeTexto h2{
+
+.section--aboutMe .row .div--aboutMeTexto h2{
     padding: 0 1rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.section--aboutMeTexto span{    
+.section--aboutMe .row .div--aboutMeTexto span{    
     font-size: 2rem;
     display: flex;
     justify-content: center;
