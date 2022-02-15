@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
@@ -10,49 +11,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDS Training - FAQ</title>
 </head>
-<body>
-    <header>
-        <a href="../index.html" class="header__logo"> <img src="../img/jds-training-icon.png" alt="Logo"> </a> 
-        <nav class = "header__nav" >
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="conoceme.html">Conoceme</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="#" id="Galeria">Galería</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="section--galery">
-        <h2>Galería</h2>
-        <div class="section__div--galery">
-            <div class="section__div--galeryImg horizontal lightblue"><img src="../img/Galería/men - celeste (1).jpg" alt="Foto hombre entrenando 1"></div>
-            <div class="section__div--galeryImg lightblue"><img src="../img/Galería/men - celeste (2).jpg" alt="Foto hombre entrenando 2"></div>
-            <div class="section__div--galeryImg green"><img src="../img/Galería/nin (1).jpg" alt="Foto mujer entrenando 1"></div>
-            <div class="section__div--galeryImg green"><img src="../img/Galería/nin (2).jpg" alt="Foto mujer entrenando 2"></div>
-            <div class="section__div--galeryImg vertical green"><img src="../img/Galería/nin (4).jpg" alt="Foto mujer entrenando 4"></div>
-            <div class="section__div--galeryImg burgundy"><img src="../img/Galería/men - bordo (1).webp" alt="Foto hombre entrenando 3"></div>
-            <div class="section__div--galeryImg burgundy"><img src="../img/Galería/men - bordo (2).webp" alt="Foto hombre entrenando 4"></div>
-            <div class="section__div--galeryImg black"><img src="../img/Galería/men - rusa (2).webp" alt="Foto hombre entrenando 6"></div>
-            <div class="section__div--galeryImg burgundy"><img src="../img/Galería/woman - bordo (2).jpg" alt="Foto mujer entrenando 9"></div>
-            <div class="section__div--galeryImg orange"><img src="../img/Galería/group-of-women-doing-sports-outdoor.jpg" alt="Foto grupo chicas1"></div>
-            <div class="section__div--galeryImg horizontal orange"><img src="../img/Galería/group-of-women-doing-sports-outdoor(1).jpg" alt="Foto grupo chicas2"></div>
-            <div class="section__div--galeryImg cuadrado burgundy"><img src="../img/Galería/woman - bordo (1).jpg" alt="Foto mujer entrenando 8"></div>
-            <div class="section__div--galeryImg horizontal pink"><img src="../img/Galería/strech.webp" alt="Foto strech "></div>
-            <div class="section__div--galeryImg white"><img src="../img/Galería/men - white (2).jpg" alt="Foto hombre entrenando 9"></div>
-            <div class="section__div--galeryImg lightblue"><img src="../img/Galería/men - rusa (3).webp" alt="Foto hombre entrenando 7"></div>
-            <div class="section__div--galeryImg horizontal green"><img src="../img/Galería/nin (5).jpg" alt="Foto mujer entrenando 5"></div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer--copyright">
-            Copyright © 2022 
-        </div>
-        <div  class="footer--credits">
-            Desarrollado por 
-            <a href="https://github.com/Cecifz" target="_blank">@Ceci</a>
-        </div>
-    </footer>
-</body>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a href="../index.html" class="header__logo"> <img src="../img/jds-training-icon.png" alt="Logo"> </a> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="conoceme.html">Conoceme</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="Galeria">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="section--galery">
+            <h2>Galería</h2>
+            <div class="section__div--galery">
+                <div class="section__div--galeryImg horizontal lightblue"><img src="../img/Galería/men - celeste (1).jpg" alt="Foto hombre entrenando 1"></div>
+                <div class="section__div--galeryImg lightblue"><img src="../img/Galería/men - celeste (2).jpg" alt="Foto hombre entrenando 2"></div>
+                <div class="section__div--galeryImg green"><img src="../img/Galería/nin (1).jpg" alt="Foto mujer entrenando 1"></div>
+                <div class="section__div--galeryImg green"><img src="../img/Galería/nin (2).jpg" alt="Foto mujer entrenando 2"></div>
+                <div class="section__div--galeryImg vertical green"><img src="../img/Galería/nin (4).jpg" alt="Foto mujer entrenando 4"></div>
+                <div class="section__div--galeryImg burgundy"><img src="../img/Galería/men - bordo (1).webp" alt="Foto hombre entrenando 3"></div>
+                <div class="section__div--galeryImg burgundy"><img src="../img/Galería/men - bordo (2).webp" alt="Foto hombre entrenando 4"></div>
+                <div class="section__div--galeryImg black"><img src="../img/Galería/men - rusa (2).webp" alt="Foto hombre entrenando 6"></div>
+                <div class="section__div--galeryImg burgundy"><img src="../img/Galería/woman - bordo (2).jpg" alt="Foto mujer entrenando 9"></div>
+                <div class="section__div--galeryImg orange"><img src="../img/Galería/group-of-women-doing-sports-outdoor.jpg" alt="Foto grupo chicas1"></div>
+                <div class="section__div--galeryImg horizontal orange"><img src="../img/Galería/group-of-women-doing-sports-outdoor(1).jpg" alt="Foto grupo chicas2"></div>
+                <div class="section__div--galeryImg cuadrado burgundy"><img src="../img/Galería/woman - bordo (1).jpg" alt="Foto mujer entrenando 8"></div>
+                <div class="section__div--galeryImg horizontal pink"><img src="../img/Galería/strech.webp" alt="Foto strech "></div>
+                <div class="section__div--galeryImg white"><img src="../img/Galería/men - white (2).jpg" alt="Foto hombre entrenando 9"></div>
+                <div class="section__div--galeryImg lightblue"><img src="../img/Galería/men - rusa (3).webp" alt="Foto hombre entrenando 7"></div>
+                <div class="section__div--galeryImg horizontal green"><img src="../img/Galería/nin (5).jpg" alt="Foto mujer entrenando 5"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer--copyright">
+                Copyright © 2022 
+            </div>
+            <div  class="footer--credits">
+                Desarrollado por 
+                <a href="https://github.com/Cecifz" target="_blank">@Ceci</a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
