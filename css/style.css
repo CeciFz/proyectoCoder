@@ -433,7 +433,6 @@ footer{
     text-align: center;
 }
 
-  
 .section--contactForm Form{
     color: #F5F5F5;
     font-size: 1.5rem;
@@ -519,17 +518,27 @@ footer{
 /*----------------MEDIA QUERIES-------------*/
 
 @media screen and (max-width: 829px) { /* 768 */
-
-    header{
+/*
+    .header{
         justify-content: center;
         padding-bottom: 1.5rem;
     }
 
     header nav ul {
         justify-content: center;
-    }
+    }*/
 
     /*INDEX*/
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+        padding-bottom: 2rem
+    }
+
     .div___hero--princ{
         background-position-y: inherit;
         background-size: cover;
@@ -613,20 +622,30 @@ footer{
     
 /* NAV */
 
-    header a img{
-        display: none;
+    #navbarNav {
+        margin-right: 0%;
     }
 
-    header nav {
-        flex-basis: 100%;
-    }
-
-    .header__nav li{
-        margin: 1%;
-    }
-
-    .header__nav li a{
+    .nav-link{
         font-size: 1.7rem;
+    }
+
+    .header .header__logo {
+        width: 110px;
+        margin-left: 2rem;
+    }
+    
+    .header{
+        margin-bottom: 2rem;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar-nav .nav-item:hover{
+        color: #3aaa35;
+        background-color: inherit;
     }
     
 
