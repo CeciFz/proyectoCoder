@@ -16,12 +16,12 @@ body{
     background-color: #242323 ;
 }
 
-a {
+body a {
     text-decoration: none;
     color: #F5F5F5;
 }
 
-h2{
+body h2{
     color: #F5F5F5;
     font-size: 4rem;
     background-color: #3aaa35; 
@@ -29,25 +29,25 @@ h2{
     padding: 1rem;
 }
 
-h3{
+body h3{
     color:#F5F5F5;
     font-size: 2.5rem;
 }
 
-h4{
+body h4{
     color:#F5F5F5;
     font-size: 2rem;
     ;
 }
 
-p {
+body p {
     color: #F5F5F5;
     font-size: 1.7rem;
     text-align: justify;
     overflow: hidden;
 }
 
-span{
+body span{
     color: #F5F5F5;
 }
 
@@ -219,7 +219,10 @@ footer{
 }
 
 .section--aboutMe .row{
-    margin-top: 4rem;
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
     gap: 5rem;
@@ -238,7 +241,6 @@ footer{
     border: #F5F5F5 solid;
     flex-basis: 60%;
 }
-
 
 .section--aboutMe .row .div--aboutMeTexto h2{
     padding: 0 1rem;
@@ -513,6 +515,18 @@ footer{
     .navbar-expand-md .navbar-collapse {
         justify-content: flex-end;
     }
+
+    .section--aboutMe .row{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        gap: 2rem;
+    }
+
+    .section--aboutMe .row .div--aboutMeTexto {
+        flex-basis: 50%;
+    }
+
+
 }
 
 
@@ -559,6 +573,39 @@ footer{
     .section__div--data span{
         font-size: 2rem;
     }
+    
+    /* PAGE - CONOCEME */
+
+    .section--aboutMe .row{
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .section--aboutMe .row .div--aboutMeImg{
+        flex-basis: 50%;
+    }
+    
+    .section--aboutMe .row .div--aboutMeImg img{ 
+        /*margin: 0% 20%;*/
+        display:block;
+        margin-left: auto;
+        margin-right: auto;            
+    }
+
+    .section--aboutMe .row .div--aboutMeTexto {
+        flex-basis: 50%;
+    }
+    
+       /* PAGE - FAQ */
+        .section--faq{
+            text-align: center;
+        }
+    
+        .section__div--faq {
+            text-align: center;
+        }
 
     /*SERVICIOS*/
     .section--serv{
@@ -575,22 +622,6 @@ footer{
     }
     .section--serv{
         margin-bottom: 2rem;
-    }
-
-    /* PAGE - CONOCEME */
-
-    .section--aboutMe{
-        padding: 2rem 0;
-        flex-direction: column-reverse;
-    }
-    
-    /* PAGE - FAQ */
-    .section--faq{
-        text-align: center;
-    }
-
-    .section__div--faq {
-        text-align: center;
     }
 
     /* PAGE - GALERIA */
@@ -614,21 +645,21 @@ footer{
 @media screen and (max-width: 576px) {/*425*/
 
     /*GENERALES*/
-    /*
-    h2 {
+    
+    body h2 {
         font-size: 3rem;
         text-align: center;
     }
 
-    h3{
+    body h3{
         font-size: 2.3rem;
         border-bottom: #F5F5F5 solid 1px;
     }
 
-    p {
+    body p {
         font-size: 1.5rem;
         text-align: center;
-}*/
+}
     
     /* INDEX */
     .div___hero--princ{
@@ -668,27 +699,6 @@ footer{
         padding: 1% 2%;
     }
 
-    .section--aboutMe{
-        margin: 1rem 0;
-    }
-
-    .section--aboutMe img{
-        max-width: 280px;
-    }
-    
-    .section--aboutMeTexto{
-        padding: 1rem;
-        margin: 0 2rem;
-    }
-
-    .section--aboutMe img{
-        max-width: 280px;
-    }
-
-    .section--contactForm Form{
-        margin-top: 1.5rem;
-    }
-
     /* PAGE - GALERIA */
     .vertical{
         grid-row: span 1; 
@@ -712,7 +722,6 @@ footer{
 
 @media screen and (max-width: 320px) {
     /* PAGE - GALERIA */
-
     .horizontal{
         grid-column: span 1; 
     }
