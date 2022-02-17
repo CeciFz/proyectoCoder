@@ -263,7 +263,39 @@ footer{
 
 /* PAGE - SERVICIOS */
 
+.section__div--serv{
+    padding: 1rem 2rem 0 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
 
+.section__div--serv .titulo{
+    width: auto;
+    text-align: center;
+}
+
+.section--serv h3 {  
+    margin-bottom: 1%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.section--serv h2{
+    margin-bottom: 1%;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.section__div--serv span {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*
 .section--serv{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -274,10 +306,6 @@ footer{
                         "box defensa";
     margin: 0% 2% 0% 2%;
     grid-gap: 1rem;
-}
-
-.section__div--serv{
-    padding: 2rem 2rem 0 2rem;
 }
 
 .titulo{
@@ -300,18 +328,7 @@ footer{
     grid-area:box;
 }
 
-.section--serv h3 {  
-    margin-bottom: 1%;
-}
-
-.section--serv h2{
-    margin-bottom: 1%;
-}
-
-.section__div--serv span {
-    font-size: 1.7rem;
-}
-
+*/
 
 /* PAGE - GALERIA */
 
@@ -647,7 +664,7 @@ footer{
     }
     
     /*SERVICIOS*/
-    .section--serv{
+  /*  .section--serv{
         grid-template-columns: 1fr;
         grid-template-areas:"titulo"
                             "funcional"
@@ -661,7 +678,7 @@ footer{
     }
     .section--serv{
         margin-bottom: 2rem;
-    }
+    }*/
 
     /* PAGE - GALERIA */
 
@@ -741,6 +758,18 @@ footer{
         font-size:smaller;
         padding: 1% 2%;
     }
+
+    /*SERVICIOS*/
+
+    
+.section--serv h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section__div--serv span {
+    font-size: 1.5rem;
+}
 
     /* PAGE - GALERIA */
     .vertical{
