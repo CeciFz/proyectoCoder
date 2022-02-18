@@ -633,6 +633,10 @@ footer{
     .section__div--contactNetworks {
         width: 80%;
     }
+
+    .nina{
+        display: none;
+    }
 }
 
 
@@ -736,6 +740,9 @@ footer{
         grid-column: span 1; 
         grid-row: span 1; 
     }
+
+    
+    
 }
 
 
@@ -828,5 +835,6 @@ footer{
     .horizontal{
         grid-column: span 1; 
     }
+
 
 }
