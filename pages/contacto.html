@@ -33,21 +33,32 @@
             </nav>
         </header>
         <section class="section--contactForm">
-            <div class="section__div--contactForm">
-                <h2>Contacto</h2>
-                <span class="rotate-vert-center">Dejame tu consulta!</span>
-                <form action="" method="" enctype="" >
-                    <label for="Nombre"> Nombre: </label>
-                    <input type="text" name="Name" id="Nombre" required>
-                    <label for="Email">Email: </label>
-                        <input type="email" name="EMAIL" id="Email" required>
-                    <label for="Teléfono">Teléfono: </label>
-                        <input type="tel" name="TEL" id="Teléfono" >
-                    <label for="Mensaje">Mensaje:</label>
-                        <textarea name="MSJ" id="Mensaje" cols="30" rows="5"required></textarea>
-                    <input class = "btn" type="submit" value="ENVIAR">
-                </form>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 section__div--contactNetworks">
+                        <h2>Contacto</h2>
+                        <span class="rotate-vert-center">Dejame tu consulta!</span>
+                        <div class="div--networks">
+                            <a href="#"><img src="../img/net/Whatsapp.png" alt="Logo-whatsapp"></a>
+                            <a href="#"><img src="../img/net/Instragram.png" alt="Logo-instagram"></a>
+                            <a href="#"><img src="../img/net/Facebook.png" alt="Logo-facebook"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 section__div--contactForm">
+                        <form action="" method="" enctype="" >
+                            <label for="Nombre"> Nombre: </label>
+                            <input type="text" name="Name" id="Nombre" required>
+                            <label for="Email">Email: </label>
+                                <input type="email" name="EMAIL" id="Email" required>
+                            <label for="Teléfono">Teléfono: </label>
+                                <input type="tel" name="TEL" id="Teléfono" >
+                            <label for="Mensaje">Mensaje:</label>
+                                <textarea name="MSJ" id="Mensaje" cols="30" rows="5"required></textarea>
+                            <input class = "btn" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                </div>
+            </div> 
         </section>
         <footer>
             <div class="footer--copyright">

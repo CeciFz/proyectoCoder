@@ -442,6 +442,12 @@ footer{
 
 /* PAGE - CONTACTO */
 
+.section--contactForm .row{
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
 .section--contactForm{
     display: flex;
     flex-direction: column;
@@ -453,22 +459,50 @@ footer{
     background-position: left;
 }
 
-.section__div--contactForm{
+.section__div--contactForm , .section__div--contactNetworks{
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    align-self: center;
+    flex-basis: 48%;
+    margin-bottom: 1rem;
 }
 
-.section--contactForm h2{
+.section__div--contactNetworks{
+    text-align: center;
+    width: 45%;
+    align-self: center;
+}
+
+.section__div--contactForm Form{
+    min-width: 80%;
+    align-self: center;
+}
+
+.section__div--contactNetworks h2{
     text-align: center;
     padding: 0rem;
+    margin-bottom: 5%;
 }
 
-.section--contactForm span{
+.section__div--contactNetworks span{
     font-size: 2rem;
     text-align: center;
+}
+
+.section__div--contactNetworks .div--networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.section__div--contactNetworks .div--networks a{
+    margin-top: 5%;
+    width: 3rem;
+}
+.section__div--contactNetworks .div--networks img{
+    width: 100%;
 }
 
 .section--contactForm Form{
@@ -516,13 +550,11 @@ footer{
     border-color: rgba(240,246,252,0.1);
     box-shadow: 0 0 0 3px rgba(46,164,79,0.4);
 }
-
-
 /**
  * ----------------------------------------
  * animation rotate-vert-center
  * ----------------------------------------
- */
+
 .rotate-vert-center {
 	-webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
 	animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
@@ -551,7 +583,7 @@ footer{
     }
 }
 
-
+ */
 
 /*----------------MEDIA QUERIES-------------*/
 
@@ -589,9 +621,18 @@ footer{
 
     .section--faq .container {
     margin-top: 1rem;
-}
+    }
 
+    /* PAGE - CONTACTO */
 
+    
+    .section--contactForm .row{
+    flex-direction: column;
+    gap: 2rem;
+    }
+    .section__div--contactNetworks {
+        width: 80%;
+    }
 }
 
 
