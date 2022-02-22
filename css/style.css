@@ -67,7 +67,7 @@ body{
 .header{
     position: sticky;
     top: 0;
-    background-color: rgba(36, 35, 35, 0.95) ;
+    background-color: rgba(36, 35, 35, 0.95);
     background-image: linear-gradient(to left, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 100%);
     background-size: 100% 7%;
     background-position: bottom;
@@ -96,13 +96,11 @@ body{
 }
 
 .navbar-nav{
-    /*gap: 1.2rem;*/
     align-items: center;
 }
 
 .navbar-nav .nav-item .nav--hover{
-    /*border-bottom: solid 1px #3aaa35;*/
-    color: #3aaa35;
+        color: #3aaa35;
 }
 .navbar-nav .nav-item:hover{
     background-color: #3aaa35; 
@@ -115,21 +113,28 @@ body{
 
 .navbar-toggler {
     font-size: 2.25rem;
-    margin-right: 4rem;
+    margin-right: 2rem;
 }  
 
 /*MAIN*/
+.section__hero, 
+.section__hero--description, 
+.section__hero--description p {
+    background-color: rgba(36, 35, 35, 0.2);
+
+}
 
 .div___hero--princ{
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     background-image: url(../img/fondoParque.png);
     background-size: 100%;
     background-position-y: 18%;
     max-height: 84vh;
     background-repeat: no-repeat;
+    background-attachment: fixed
 }
 
 
@@ -145,14 +150,15 @@ body{
 }
 
 .section__hero--description{
-    padding: 2% 4%;
-    margin-bottom: 3%;
+    padding: 4rem 10rem;
+}
+
+.section__hero--description p{
     font-size: 2.2rem;
-    text-align: center;
     line-height: 1.7;
 }
 
-
+/*
 .section__hero--img {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +170,7 @@ body{
 .section__hero--img img{
     width: 15rem;
 }
-
+*/
 .section__jds{
     display: flex;
     flex-flow: column wrap;
@@ -176,13 +182,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2% 4%;
-    margin: 2% 0%;
+    margin-bottom: 4rem;
     gap: 2rem;
 }
+
 .section__div--networks a{
-    margin-top: 15%;
-    width: 3rem;
+    width: 4rem;
+    background-color: #F5F5F5;
+    border: 2px #3aaa35 solid;
+    border-radius: 50%;
 }
 
 .section__div--networks img{
@@ -190,18 +198,19 @@ body{
 }
 
 .section__div--data {
-    padding: 2% 2%;
+    padding: 3rem 2rem;
     text-align: center;
-    border: 1px #0c230b solid;
     background-color: rgba(58, 170, 53, 0.7);
+    border-radius: 35% 0%;
 }
 
-.section__div--data h3 {
-    font-size: 4rem;
+.section__div--data h1 {
+    font-size: 3rem;
+    color: #F5F5F5
 }
 
 .section__div--data span {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 /*FOOTER*/
@@ -499,7 +508,7 @@ footer{
 }
 .section__div--contactNetworks .div--networks a{
     margin-top: 5%;
-    width: 3rem;
+    width: 4rem;
 }
 .section__div--contactNetworks .div--networks img{
     width: 100%;
@@ -550,11 +559,11 @@ footer{
     border-color: rgba(240,246,252,0.1);
     box-shadow: 0 0 0 3px rgba(46,164,79,0.4);
 }
-/**
+/*
  * ----------------------------------------
  * animation rotate-vert-center
  * ----------------------------------------
-
+*/
 .rotate-vert-center {
 	-webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
 	animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
@@ -583,7 +592,7 @@ footer{
     }
 }
 
- */
+
 
 /*----------------MEDIA QUERIES-------------*/
 
@@ -612,6 +621,10 @@ footer{
         margin-bottom: 1rem;
         gap: 2rem;
     }
+    
+    .section__hero--description {
+        padding: 3rem 1rem;
+    }
 
     .section--aboutMe .row .div--aboutMeTexto {
         flex-basis: 50%;
@@ -627,8 +640,8 @@ footer{
 
     
     .section--contactForm .row{
-    flex-direction: column;
-    gap: 2rem;
+        flex-direction: column;
+        gap: 2rem;
     }
     .section__div--contactNetworks {
         width: 80%;
@@ -665,23 +678,17 @@ footer{
         background-size: cover;
         max-height: 55vh;    }
     
-    .section__hero--logo{
-        max-width: 80%;
-        min-width: 336px;
-        align-self: center;
-    }
-
-    .section__hero--description {
+    .section__hero--description p{
         font-size: 1.7rem;
-        padding: 3rem;
     }
 
-    .section__div--data h3{
-        font-size: 3rem;
+    .section__div--data{
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
     }
 
     .section__div--data span{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     
     /* PAGE - CONOCEME */
@@ -769,7 +776,7 @@ footer{
         text-align: center;
 }
     
-    /* INDEX */
+    /* INDEX *//*
     .div___hero--princ{
         display: flex;
         flex-direction: column;
@@ -801,10 +808,10 @@ footer{
         margin-top: 4%;
         width: 8%;
     }
-    
+    */
     footer{
-        font-size:smaller;
-        padding: 1% 2%;
+        font-size:1rem;
+        padding: 0.5rem 1.5rem;
     }
 
     /*SERVICIOS*/
