@@ -14,6 +14,7 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #242323;
+    color: #F5F5F5;
 }
 
 body a {
@@ -22,33 +23,25 @@ body a {
 }
 
 body h2{
-    color: #F5F5F5;
     font-size: 4rem;
     background-color: #3aaa35; 
     border-style: ridge;
     padding: 1rem;
+    border-radius: 10px;
 }
 
 body h3{
-    color:#F5F5F5;
     font-size: 2.5rem;
 }
 
 body h4{
-    color:#F5F5F5;
     font-size: 2rem;
-    ;
 }
 
 body p {
-    color: #F5F5F5;
     font-size: 1.7rem;
     text-align: justify;
     overflow: hidden;
-}
-
-body span{
-    color: #F5F5F5;
 }
 
 /*---------------- CLASES Y SELECTORES-------------*/
@@ -241,13 +234,13 @@ footer{
 }
 
 .section--aboutMe .row{
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;
     margin-top: 3rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: center;*/
+    gap: 4rem;
 }
 
 .section--aboutMe .row .div--aboutMeImg{
@@ -485,41 +478,6 @@ footer{
     margin-bottom: 1rem;
 }
 
-.section__div--contactNetworks{
-    text-align: center;
-    width: 45%;
-    align-self: center;
-}
-
-.section__div--contactForm Form{
-    min-width: 80%;
-    align-self: center;
-}
-
-.section__div--contactNetworks h2{
-    text-align: center;
-    padding: 0rem;
-    margin-bottom: 5%;
-}
-
-.section__div--contactNetworks span{
-    font-size: 2rem;
-    text-align: center;
-}
-
-.section__div--contactNetworks .div--networks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.section__div--contactNetworks .div--networks a{
-    margin-top: 5%;
-    width: 4rem;
-}
-.section__div--contactNetworks .div--networks img{
-    width: 100%;
-}
 
 .section--contactForm Form{
     color: #F5F5F5;
@@ -566,6 +524,39 @@ footer{
     border-color: rgba(240,246,252,0.1);
     box-shadow: 0 0 0 3px rgba(46,164,79,0.4);
 }
+
+.section__div--contactNetworks{
+    text-align: center;
+    width: 45%;
+    align-self: center;
+}
+
+.section__div--contactForm Form{
+    min-width: 80%;
+    align-self: center;
+}
+/*
+.section__div--contactNetworks h2{
+    text-align: center;
+    padding: 0rem;
+    margin-bottom: 5%;
+}*/
+
+.section__div--contactNetworks span{
+    font-size: 2rem;
+}
+
+.section__div--contactNetworks .div--networks {
+    gap: 2rem;
+}
+.section__div--contactNetworks .div--networks a{
+    margin-top: 5%;
+    width: 4rem;
+}
+.section__div--contactNetworks .div--networks img{
+    width: 100%;
+}
+
 /*
  * ----------------------------------------
  * animation rotate-vert-center
@@ -703,8 +694,10 @@ footer{
     .section--aboutMe .row{
         flex-wrap: wrap;
         margin-bottom: 2rem;
-        gap: 2rem;
         flex-direction: column-reverse;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;            
     }
 
     .section--aboutMe .row .div--aboutMeImg{
@@ -720,8 +713,13 @@ footer{
 
     .section--aboutMe .row .div--aboutMeTexto {
         flex-basis: 50%;
+        padding:1rem;
     }
     
+    .section--aboutMe .row .div--aboutMeTexto span {
+        padding:0rem;
+    }
+
     /*SERVICIOS*/
   /*  .section--serv{
         grid-template-columns: 1fr;
