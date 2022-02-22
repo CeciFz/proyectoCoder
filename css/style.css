@@ -183,7 +183,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 4rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .section__div--networks a{
@@ -191,10 +191,17 @@ body{
     background-color: #F5F5F5;
     border: 2px #3aaa35 solid;
     border-radius: 50%;
+    align-self: center;
+}
+
+.section__div--networks a:hover{
+    transform: scale(1.5);
 }
 
 .section__div--networks img{
     width: 100%;
+    transform: scale(1); /*tño por defecto*/
+    transition: all ease .1s;
 }
 
 .section__div--data {
