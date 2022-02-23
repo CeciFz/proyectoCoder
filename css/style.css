@@ -234,12 +234,6 @@ footer{
 }
 
 .section--aboutMe .row{
-    /*flex-wrap: nowrap;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-    justify-content: center;*/
     gap: 4rem;
 }
 
@@ -256,12 +250,6 @@ footer{
     /*border: #F5F5F5 solid;*/
     flex-basis: 60%;
 }
-/*
-.section--aboutMe .row .div--aboutMeTexto h2{
-    padding: 0 1rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}*/
 
 .section--aboutMe .row .div--aboutMeTexto span{    
     font-size: 2rem;
@@ -482,7 +470,10 @@ footer{
     transition: all ease .1s;
 }
 .div--contactNetworks a{
-    width: 4rem;
+    width: 5rem;
+    background-color: #F5F5F5;
+    border: 2px #3aaa35 solid;
+    border-radius: 50%;
 }
 .div--contactNetworks img{
     width: 100%;
@@ -804,6 +795,7 @@ footer{
     .vertical{
         grid-row: span 1; 
     }
+
 }
 
 @media screen and (max-width: 320px) {
