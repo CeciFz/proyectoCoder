@@ -26,7 +26,7 @@ body h2{
     font-size: 4rem;
     background-color: #3aaa35; 
     border-style: ridge;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
 }
 
@@ -253,15 +253,15 @@ footer{
 .section--aboutMe .row .div--aboutMeTexto {
     padding: 2rem;
     line-height: 1.6;
-    border: #F5F5F5 solid;
+    /*border: #F5F5F5 solid;*/
     flex-basis: 60%;
 }
-
+/*
 .section--aboutMe .row .div--aboutMeTexto h2{
     padding: 0 1rem;
     margin-bottom: 2rem;
     text-align: center;
-}
+}*/
 
 .section--aboutMe .row .div--aboutMeTexto span{    
     font-size: 2rem;
@@ -452,32 +452,45 @@ footer{
 /* PAGE - CONTACTO */
 
 .section--contactForm .row{
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
-}
-
-.section--contactForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
     background-image: url(../img/fondoParque.png);
     background-size: cover;
     background-position: left;
+    height:100%;
 }
 
-.section__div--contactForm , .section__div--contactNetworks{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    align-self: center;
-    flex-basis: 48%;
-    margin-bottom: 1rem;
+.div--contactNetworks{
+    flex-basis: 15%;
+    height: 80%;
 }
 
+.div--contactTitle{
+    height: 80%;
+    gap: 2rem;
+    flex-basis: 30%;
+}
+
+.section__div--contactForm{
+    flex-basis: 45%;
+}
+
+.div--contactTitle span{
+    font-size: 2rem;
+}
+
+.div--contactNetworks {
+    transform: scale(1); 
+    transition: all ease .1s;
+}
+.div--contactNetworks a{
+    width: 4rem;
+}
+.div--contactNetworks img{
+    width: 100%;
+}
+
+.div--contactNetworks a:hover{
+    transform: scale(1.5);
+}
 
 .section--contactForm Form{
     color: #F5F5F5;
@@ -486,6 +499,7 @@ footer{
     border: 2px #21262d solid;
     border-radius: 5px;
     padding: 1.5rem;
+    min-width: 70%;
 }
 
 .section--contactForm input , .section--contactForm textarea{
@@ -525,37 +539,8 @@ footer{
     box-shadow: 0 0 0 3px rgba(46,164,79,0.4);
 }
 
-.section__div--contactNetworks{
-    text-align: center;
-    width: 45%;
-    align-self: center;
-}
 
-.section__div--contactForm Form{
-    min-width: 80%;
-    align-self: center;
-}
-/*
-.section__div--contactNetworks h2{
-    text-align: center;
-    padding: 0rem;
-    margin-bottom: 5%;
-}*/
 
-.section__div--contactNetworks span{
-    font-size: 2rem;
-}
-
-.section__div--contactNetworks .div--networks {
-    gap: 2rem;
-}
-.section__div--contactNetworks .div--networks a{
-    margin-top: 5%;
-    width: 4rem;
-}
-.section__div--contactNetworks .div--networks img{
-    width: 100%;
-}
 
 /*
  * ----------------------------------------
@@ -636,13 +621,25 @@ footer{
 
     /* PAGE - CONTACTO */
 
-    
-    .section--contactForm .row{
-        flex-direction: column;
-        gap: 2rem;
+    .div--contactNetworks{
+        flex-direction: row !important;
+        flex-basis: 100%;
+        padding-bottom: 2rem;
     }
-    .section__div--contactNetworks {
-        width: 80%;
+    
+    .div--contactTitle{
+        flex-basis: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section__div--contactForm{
+        flex-basis: 100%;
+    }
+
+    .section--contactForm .row{
+        height: auto;
+        padding: 2rem;
     }
 
     .nina{
@@ -705,7 +702,6 @@ footer{
     }
     
     .section--aboutMe .row .div--aboutMeImg img{ 
-        /*margin: 0% 20%;*/
         display:block;
         margin-left: auto;
         margin-right: auto;            
@@ -781,39 +777,12 @@ footer{
         text-align: center;
 }
     
-    /* INDEX *//*
-    .div___hero--princ{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* INDEX */
 
     .section__hero--logo{
         min-width: 260px;
     }
-
-    .section__hero--description {
-        font-size: 1.5rem;
-        padding: 2.5rem;
-    }
-
-    .section__div--data {
-        margin: 5% 1% 3% 1%;
-    }
-
-    .section__div--data h3{
-        font-size: 2rem;
-    }
-
-    .section__div--data span{
-        font-size: 1rem;
-    }
-
-    .section__div--networks a{
-        margin-top: 4%;
-        width: 8%;
-    }
-    */
+    
     footer{
         font-size:1rem;
         padding: 0.5rem 1.5rem;
@@ -835,11 +804,6 @@ footer{
     .vertical{
         grid-row: span 1; 
     }
-    
-    .section__div--contactForm{
-        gap: 1rem;
-    }
-
 }
 
 @media screen and (max-width: 320px) {
