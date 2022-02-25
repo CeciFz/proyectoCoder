@@ -1,0 +1,25 @@
+{
+  "name": "jds-training",
+  "version": "1.0.0",
+  "description": "web para entrenador personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/compiled.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cecifz/proyectoCoder.git"
+  },
+  "author": "Ceci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cecifz/proyectoCoder/issues"
+  },
+  "homepage": "https://github.com/Cecifz/proyectoCoder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

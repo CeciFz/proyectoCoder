@@ -1,0 +1,130 @@
+
+/* PAGE - CONTACTO */
+
+.section--contactForm .row{
+    background-image: url(../img/fondoParque.png);
+    background-size: cover;
+    background-position: left;
+    height:100%;
+
+    .div--contactNetworks{
+        flex-basis: 15%;
+        height: 80%;
+        transform: scale(1); 
+        transition: all ease .1s;
+
+        a{
+            width: 5rem;
+            background-color: $colorLight;
+            border: 2px $colorLogo solid;
+            border-radius: 50%;
+
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .div--contactTitle{
+        height: 80%;
+        gap: 2rem;
+        flex-basis: 30%;
+        
+        span{
+            font-size: 2rem;
+        }
+    }
+
+    .section__div--contactForm{
+        flex-basis: 45%;
+
+        form{
+            color: $colorLight;
+            font-size: 1.5rem;
+            background-color:#161b22 ;
+            border: 2px #21262d solid;
+            border-radius: 5px;
+            padding: 1.5rem;
+            min-width: 70%;
+
+            input , textarea{
+                display:block;
+                margin-bottom: 4%;
+                margin-top: 1%;
+                background-color: #0d1117 ;
+                color: $colorLight;
+                width: 100%;
+                border-radius: 5px;
+                padding: 6px 12px;
+                border: 2px #21262d solid;
+                font-size: 1.3rem;
+                font-family: inherit;
+            }
+
+            textarea:focus ,  input:focus{
+                border-color: #1f6feb;
+                outline: none;
+                box-shadow: 0 0 0 3px #0c2d6b;
+            }
+
+            .btn{
+                background-color: #238636;
+                border-color: rgba(240,246,252,0.1);
+                box-shadow:  0 0 transparent , 0 0 transparent;
+                font-size: 1.5rem;
+                color: $colorLight;
+                margin-bottom: 2%;
+                margin-top: 1%;
+                cursor: pointer;
+
+                &:focus{
+                    background-color: #238636;
+                    border-color: rgba(240,246,252,0.1);
+                    box-shadow: 0 0 0 3px rgba(46,164,79,0.4);
+                }
+            }
+        }
+    }
+}
+
+
+
+/*
+ * ----------------------------------------
+ * animation rotate-vert-center
+ * ----------------------------------------
+*/
+
+.section--contactForm .div--contactTitle{
+
+    span.rotate-vert-center {
+        -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
+        animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
+    }
+
+
+    @-webkit-keyframes rotate-vert-center {
+        0% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+        }
+        100% {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes rotate-vert-center {
+        0% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+        }
+        100% {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+        }
+    }
+}

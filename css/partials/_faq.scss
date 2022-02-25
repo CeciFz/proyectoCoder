@@ -1,0 +1,39 @@
+
+
+/* PAGE - FAQ */
+
+.section--faq .container {
+    margin-top: 5rem;
+
+    .accordion-item {
+        background-color: inherit;
+        border: 1px solid #21262d;
+        margin-bottom: 0.5rem;
+    
+        &:focus {
+            box-shadow: 0 2px 2px 2px rgba(240,246,252,0.1);
+            border-color: rgba(240,246,252,0.1);
+        }
+    }
+
+    .accordion-button {
+        font-size: inherit; 
+        color: inherit;
+        background-color: #0d1117;
+        
+        &::after{
+            background-size: 2.25rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235eff56'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");    
+        }
+
+        &:focus {
+            background-color: #0d1117 ;
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 .25rem #21262d;
+            border-color: rgba(240,246,252,0.1);
+        }
+
+    }
+}

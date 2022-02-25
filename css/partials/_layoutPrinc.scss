@@ -1,0 +1,81 @@
+/* INDEX */   
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+
+/*HEADER*/
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: rgba(36, 35, 35, 0.95);
+    background-image: linear-gradient(to left, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 100%);
+    background-size: 100% 7%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    &__logo{
+        width: 130px;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+
+    &__logo img{
+        width: 100%;
+        padding: 2%;
+    }
+/*
+    &.navbar-toggler {
+        font-size: 2.25rem;
+        margin-right: 2rem;
+    } 
+*/
+    div#navbarNav{
+        margin-right: 3rem;
+    }
+    .nav-item a.nav--hover{
+        color: $colorLogo; 
+    }
+
+    li.nav-item:hover{
+        background-color: $colorLogo; 
+        border-radius: 5%;
+        
+        .nav-linkkk{
+            color: $colorLight;
+        }
+    }
+
+    li.nav-item:hover{
+        background-color: $colorLogo; 
+        border-radius: 5%;
+    }
+    
+    a.nav-linkkk{
+        color: $colorLight;
+        font-size: 1.9rem;
+        padding: 1rem 1.2rem;
+    }
+    
+}
+
+/*FOOTER*/
+footer{
+    padding: 0.2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #000600;
+    color: $colorLight;
+    font-size: 1.3rem;
+    background: rgb(36,35,35);
+    background: linear-gradient(43deg, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 81%, rgba(36,35,35,1) 100%);
+}
+
+
