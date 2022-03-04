@@ -49,7 +49,7 @@
             display: none;
         }
     }
-    
+    /*
     &.green {
         background-color: #5eff56;
     }
@@ -76,5 +76,21 @@
 
     &.pink{
         background-color: #f36fef;
+    }*/
+}
+
+$mapGalery: (
+    green: #5eff56,    
+    burgundy: #5e2121,
+    lightblue: #32b3f8d7,
+    orange:  #f88832d7,
+    white: #ffffffd7,
+    black: #000600,
+    pink: #f36fef
+);
+
+@each $nameColour, $colour in $mapGalery {
+    .section__div--galeryImg.#{$nameColour} {
+        background-color: $colour;
     }
 }
