@@ -1,33 +1,44 @@
+@import "variables";
+@import "mediaQueries";
+
 /* PAGE - CONOCEME */
-.section--aboutMe .container{
-    min-height: 70vh;
+.section--aboutMe {
+    .row{
+        gap: 2rem;
+        @include desktopMin{
+            gap: 0rem;
+        }
+        @include tablet{
+            flex-direction: column-reverse;
+        }
 
-    div.row{
-        gap: 4rem;
-
-        div.div--aboutMeImg{
+        .div--aboutMeImg{
         flex-basis: 30%;
 
             img{
                 box-shadow: 0px 0px 2px 2px $colorLight;
+                @include mobile{
+                    width: 60%;
+                }
             }
         }
 
-        div.div--aboutMeTexto {
+        .div--aboutMeTexto {
             padding: 2rem;
-            line-height: 1.6;
             flex-basis: 60%;
+            @include tablet{
+                margin-bottom: 1rem;
+            }
 
             span{    
                 font-size: 2rem;
                 display: flex;
-                justify-content: center;
+                @include superCenter;
                 padding: 2rem;
+                @include tablet{
+                    padding: 0rem;
+                }
             }
         }
-
     }
 }
-
-
-

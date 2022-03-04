@@ -1,17 +1,24 @@
 
 /* PAGE - CONTACTO */
 
-.section--contactForm .row{
+.section--contactForm {
     background-image: url(../img/fondoParque.png);
     background-size: cover;
     background-position: left;
-    height:100%;
+    /*height:100%;*/
 
     .div--contactNetworks{
-        flex-basis: 15%;
-        height: 80%;
+        flex-basis: 10%;
+        /*height: 80%;*/
         transform: scale(1); 
         transition: all ease .1s;
+        gap: 4rem;
+        @include tablet{
+            flex-direction: row !important;
+            flex-basis: 100%;
+            padding-bottom: 2rem;
+        }
+
 
         a{
             width: 5rem;
@@ -29,17 +36,33 @@
     }
 
     .div--contactTitle{
-        height: 80%;
+        /*height: 80%;*/
         gap: 2rem;
         flex-basis: 30%;
+        @include tablet{
+            flex-basis: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
         
         span{
             font-size: 2rem;
+            @include tablet{
+                font-size: 1.6rem;
+            }
         }
     }
 
     .section__div--contactForm{
-        flex-basis: 45%;
+        flex-basis: 50%;
+        @include tablet{
+            flex-basis: 80%;
+        }
+        @include mobile{
+            flex-basis: 100%;
+        }
+
 
         form{
             color: $colorLight;

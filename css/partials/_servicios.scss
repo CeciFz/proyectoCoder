@@ -4,7 +4,6 @@
     padding: 1rem 2rem 0 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
 
     .titulo{
         width: auto;
@@ -19,10 +18,13 @@
         span {
             font-size: 2rem;
             text-align: center;
+            @include tablet{
+                font-size: 1.6rem;
+            }
         }
     }
 
-    div.row h3{
+    .row h3{
         margin-bottom: 1%;
         border-bottom: 1px solid;
         padding: 0.5rem;
