@@ -1,3 +1,4 @@
+@import "mediaQueries";
 /*---------------- CLASES Y SELECTORES-------------*/
 
 /*INDEX*/
@@ -11,19 +12,18 @@
 }
 
 .div___hero--princ{
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;*/
     background-image: url(../img/fondoParque.png);
     background-size: 100%;
     background-position-y: 18%;
     max-height: 84vh;
     background-repeat: no-repeat;
-    background-attachment: fixed
+    background-attachment: fixed;
+    @include tablet{
+        background-position-y: inherit;
+        background-size: cover;
+        max-height: 55vh;
+    }
 }
-
-
 
 .section__hero--logo{
     max-width: 40%;
@@ -33,15 +33,24 @@
     border-radius: 70%;
     padding: 1rem;
     border-top-right-radius: initial;*/   
+    @include mobile{
+        min-width: 260px;
+    }
 }
 
 .section__hero--description{
     padding: 4rem 10rem;
+    @include desktopMin{
+        padding: 3rem 1rem;
+    }
 }
 
 .section__hero--description p{
     font-size: 2.2rem;
     line-height: 1.7;
+    @include tablet{
+        font-size: 1.7rem;
+    }
 }
 
 /*
@@ -95,6 +104,10 @@
     text-align: center;
     background-color: rgba(58, 170, 53, 0.7);
     border-radius: 35% 0%;
+    @include tablet{
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .section__div--data h1 {
@@ -104,4 +117,7 @@
 
 .section__div--data span {
     font-size: 1.7rem;
+    @include tablet{
+        font-size: 1.3rem;
+    }
 }

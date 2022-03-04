@@ -1,3 +1,5 @@
+@import "mediaQueries";
+
 /* INDEX */   
 
 body{
@@ -9,59 +11,98 @@ body{
 
 /*HEADER*/
 
+
 .header{
     position: sticky;
     top: 0;
-    background-color: rgba(36, 35, 35, 0.95);
+    background-color: rgba($colorDark, 0.95);
     background-image: linear-gradient(to left, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 100%);
     background-size: 100% 7%;
     background-position: bottom;
     background-repeat: no-repeat;
-
+    @include tablet{
+        position: inherit;
+    }
+    
     &__logo{
         width: 130px;
         margin-bottom: 1rem;
         margin-left: 3rem;
+        @include desktopMin{
+            width: 110px;
+            margin-left: 2rem;
+        }
     }
 
     &__logo img{
         width: 100%;
         padding: 2%;
     }
-/*
-    &.navbar-toggler {
-        font-size: 2.25rem;
-        margin-right: 2rem;
-    } 
-*/
+
     div#navbarNav{
         margin-right: 3rem;
-    }
-    .nav-item a.nav--hover{
-        color: $colorLogo; 
-    }
-
-    li.nav-item:hover{
-        background-color: $colorLogo; 
-        border-radius: 5%;
-        
-        .nav-linkkk{
-            color: $colorLight;
+        @include desktopMin{
+            margin-right: 0.6rem;
         }
     }
 
-    li.nav-item:hover{
-        background-color: $colorLogo; 
-        border-radius: 5%;
-    }
-    
     a.nav-linkkk{
         color: $colorLight;
         font-size: 1.9rem;
         padding: 1rem 1.2rem;
+        /*@include desktopMin{
+            font-size: 1.8rem;
+            padding: 1rem 1rem;
+        }  */  
     }
-    
+
+    .nav-item a.nav--hover{
+        color: $colorLogo; 
+    }
+
+    a.nav-linkkk:hover{
+        background-color: $colorLogo; 
+        border-radius: 5%;
+        color: $colorLight;
+    }
 }
+
+/*TOGGLER*/
+
+header{
+    .navbar-toggler {
+        font-size: 2.25rem;
+        margin-right: 2rem;
+    }
+    div#navbarNav{    
+        @include tablet{
+            text-align: center;
+            margin-bottom: 2.5rem;
+            margin-right: 0rem;
+        }
+    }
+    .navbar-nav{
+        @include tablet{
+            gap: 1rem;
+        }
+    }
+
+}
+/*
+$prueba: 0;
+
+[aria-expanded = "true"] {
+    $prueba: 1;
+}
+
+@if $prueba == 1{
+    p{
+    background-color: red;
+    background-size: 50% 7%;
+    color: aqua;
+    }
+}
+*/
 
 /*FOOTER*/
 footer{
@@ -76,6 +117,10 @@ footer{
     font-size: 1.3rem;
     background: rgb(36,35,35);
     background: linear-gradient(43deg, rgba(36,35,35,1) 0%, rgba(92,200,81,1) 81%, rgba(36,35,35,1) 100%);
+    @include mobile{
+        font-size:1rem;
+        padding: 0.5rem 1.5rem;
+    }
 }
 
 

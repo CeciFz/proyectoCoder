@@ -4,3 +4,8 @@ $colorDark: #242323;
 $colorLight: #F5F5F5;
 
 
+@mixin superCenter {
+    align-items: center;
+    justify-content: center;
+}
+

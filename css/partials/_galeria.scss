@@ -1,8 +1,8 @@
 
 /* PAGE - GALERIA */
 
-section.section--galery{
-    padding: 2rem 4rem;
+.section--galery{
+    /*padding: 2rem 4rem;*/
 
     .section__div--galery{
         margin-top: 1rem;
@@ -11,6 +11,10 @@ section.section--galery{
         grid-template-rows: auto; 
         grid-auto-flow: dense;
         gap: 1rem;
+        @include desktopMin {
+            padding: 0rem 1rem;
+            gap: 0.5rem;
+        }
 
         img{
             width: 100%; 
@@ -25,6 +29,10 @@ section.section--galery{
     &.cuadrado{
         grid-column: span 2; 
         grid-row: span 2; 
+        @include tablet{
+            grid-column: span 1; 
+            grid-row: span 1;
+        }
     }
     &.horizontal{
         grid-column: span 2;
@@ -32,12 +40,21 @@ section.section--galery{
 
     &.vertical{
         grid-row: span 2;
+        @include mobile{
+            grid-row: span 1; 
+        }
     }
 
+    &.nina {
+        @include desktopMin{
+            display: none;
+        }
+    }
+    
     &.green {
         background-color: #5eff56;
     }
-
+    
     &.burgundy{
         background-color: #5e2121;
     }
