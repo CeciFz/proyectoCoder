@@ -3,15 +3,16 @@
 .section__div{
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
         
     &--serv{
-        margin-bottom: 1rem;
+        margin: 2rem 0;
         justify-content: center;
         align-items: center;
         gap:2rem;
         line-height: 2;
-        background-color: #0d1117;
-        border: 2px #21262d solid;
+        /*background-color: #0d1117;
+        border: 2px #21262d solid;*/
         border-radius: 10px;
         padding: 1.5rem 0rem;
     }
@@ -19,7 +20,6 @@
     &--titulo{
         width: auto;
         text-align: center;
-        margin-bottom: 2rem;
 
         h2{
             margin-bottom: 1rem;
@@ -37,7 +37,7 @@
     }
 
     &--img{
-        max-width: 200px;
+        max-width: 250px;
         align-self: center;
 
         & img {
@@ -47,7 +47,7 @@
     }
 
     &--description{
-        align-self: center;
+        align-self: flex-start;
 
         h3{
         margin-bottom: 1%;
