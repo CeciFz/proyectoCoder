@@ -274,16 +274,21 @@ footer {
   justify-content: center;
   align-items: center; }
   .section__div--serv {
-    margin: 2rem 0rem;
+    margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    gap: 2rem; }
+    gap: 2rem;
+    line-height: 2;
+    background-color: #0d1117;
+    border: 2px #21262d solid;
+    border-radius: 10px;
+    padding: 1.5rem 0rem; }
   .section__div--titulo {
     width: auto;
     text-align: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     .section__div--titulo h2 {
-      margin-bottom: 1%;
+      margin-bottom: 1rem;
       text-align: center;
       padding: 0rem 1rem; }
     .section__div--titulo span {
@@ -293,81 +298,63 @@ footer {
         .section__div--titulo span {
           font-size: 1.6rem; } }
   .section__div--img {
-    max-width: 220px; }
+    max-width: 200px;
+    align-self: center; }
     .section__div--img img {
-      width: 100%; }
-  .section__div--description h3 {
-    margin-bottom: 1%;
-    border-bottom: 1px solid;
-    padding: 0.5rem;
-    text-align: center; }
+      width: 100%;
+      border-radius: 10px; }
+  .section__div--description {
+    align-self: center; }
+    .section__div--description h3 {
+      margin-bottom: 1%;
+      padding: 0.5rem;
+      text-align: center; }
 
 /* PAGE - GALERIA */
-.section--galery {
-  /*padding: 2rem 4rem;*/ }
-  .section--galery .section__div--galery {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: auto;
-    grid-auto-flow: dense;
-    gap: 1rem; }
-    @media screen and (max-width: 830px) {
-      .section--galery .section__div--galery {
-        padding: 0rem 1rem;
-        gap: 0.5rem; } }
-    .section--galery .section__div--galery img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      padding: 0.1rem; }
+.section--galery .h2 {
+  width: auto;
+  text-align: center; }
+  .section--galery .h2 h2 {
+    padding: 0rem 13rem;
+    text-align: center; }
 
-.section__div--galeryImg {
-  /*
-    &.green {
-        background-color: #5eff56;
-    }
-    
-    &.burgundy{
-        background-color: #5e2121;
-    }
-
-    &.lightblue{
-        background-color: #32b3f8d7;
-    }
-
-    &.orange{
-        background-color: #f88832d7;
-    }
-
-    &.white{
-        background-color: #ffffffd7;
-    }
-
-    &.black{
-        background-color: #000600;
-    }
-
-    &.pink{
-        background-color: #f36fef;
-    }*/ }
-  .section__div--galeryImg.cuadrado {
-    grid-column: span 2;
-    grid-row: span 2; }
-    @media screen and (max-width: 767.98px) {
-      .section__div--galeryImg.cuadrado {
-        grid-column: span 1;
-        grid-row: span 1; } }
-  .section__div--galeryImg.horizontal {
-    grid-column: span 2; }
-  .section__div--galeryImg.vertical {
-    grid-row: span 2; }
-    @media screen and (max-width: 576px) {
-      .section__div--galeryImg.vertical {
-        grid-row: span 1; } }
+.section--galery .section__div--galery {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  gap: 1rem; }
   @media screen and (max-width: 830px) {
-    .section__div--galeryImg.nina {
-      display: none; } }
+    .section--galery .section__div--galery {
+      padding: 0rem 1rem;
+      gap: 0.5rem; } }
+  .section--galery .section__div--galery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.1rem; }
+
+.section__div--galeryImg.cuadrado {
+  grid-column: span 2;
+  grid-row: span 2; }
+  @media screen and (max-width: 767.98px) {
+    .section__div--galeryImg.cuadrado {
+      grid-column: span 1;
+      grid-row: span 1; } }
+
+.section__div--galeryImg.horizontal {
+  grid-column: span 2; }
+
+.section__div--galeryImg.vertical {
+  grid-row: span 2; }
+  @media screen and (max-width: 576px) {
+    .section__div--galeryImg.vertical {
+      grid-row: span 1; } }
+
+@media screen and (max-width: 830px) {
+  .section__div--galeryImg.nina {
+    display: none; } }
 
 .section__div--galeryImg.green {
   background-color: #5eff56; }
@@ -391,6 +378,10 @@ footer {
   background-color: #f36fef; }
 
 /* PAGE - FAQ */
+.section--faq .container .h2 {
+  width: auto;
+  text-align: center; }
+
 .section--faq .container .accordion-item {
   background-color: inherit;
   border: 1px solid #21262d;

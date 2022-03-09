@@ -1,7 +1,16 @@
 /* PAGE - GALERIA */
 
 .section--galery{
-    /*padding: 2rem 4rem;*/
+    .h2{
+        width: auto;
+        text-align: center;
+    
+        h2{
+            padding: 0rem 13rem;
+            
+            text-align: center;
+        }
+    }
 
     .section__div--galery{
         margin-top: 1rem;
@@ -49,34 +58,6 @@
             display: none;
         }
     }
-    /*
-    &.green {
-        background-color: #5eff56;
-    }
-    
-    &.burgundy{
-        background-color: #5e2121;
-    }
-
-    &.lightblue{
-        background-color: #32b3f8d7;
-    }
-
-    &.orange{
-        background-color: #f88832d7;
-    }
-
-    &.white{
-        background-color: #ffffffd7;
-    }
-
-    &.black{
-        background-color: #000600;
-    }
-
-    &.pink{
-        background-color: #f36fef;
-    }*/
 }
 
 $mapGalery: (
