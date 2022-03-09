@@ -48,10 +48,6 @@ body{
         color: $colorLight;
         font-size: 1.9rem;
         padding: 1rem 1.2rem;
-        /*@include desktopMin{
-            font-size: 1.8rem;
-            padding: 1rem 1rem;
-        }  */  
     }
 
     .nav-item a.nav--hover{
