@@ -280,10 +280,13 @@ footer {
     align-items: center;
     gap: 2rem;
     line-height: 2;
-    /*background-color: #0d1117;
-        border: 2px #21262d solid;*/
     border-radius: 10px;
-    padding: 1.5rem 0rem; }
+    padding: 1.5rem 0rem;
+    flex-wrap: nowrap;
+    padding: 1rem; }
+    @media screen and (max-width: 767.98px) {
+      .section__div--serv {
+        flex-wrap: wrap; } }
   .section__div--titulo {
     width: auto;
     text-align: center; }
@@ -300,6 +303,10 @@ footer {
   .section__div--img {
     max-width: 250px;
     align-self: center; }
+    @media screen and (max-width: 767.98px) {
+      .section__div--img {
+        max-width: 230px;
+        order: -1; } }
     .section__div--img img {
       width: 100%;
       border-radius: 10px; }
