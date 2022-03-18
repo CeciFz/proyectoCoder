@@ -20,6 +20,10 @@ body{
         text-decoration: none;
         color: $colorLight;
     }
+    a:hover {
+        color: $colorLogo;
+    }
+
 
     h2{
         font-size: 4rem;
@@ -58,4 +62,5 @@ body{
             text-align: center;
         }
     }
+
 }

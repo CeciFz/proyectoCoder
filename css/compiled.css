@@ -22,6 +22,8 @@ body {
   body a {
     text-decoration: none;
     color: #F5F5F5; }
+  body a:hover {
+    color: #3aaa35; }
   body h2 {
     font-size: 4rem;
     background-color: #3aaa35;
@@ -113,21 +115,6 @@ header .navbar-toggler {
   header .navbar-nav {
     gap: 1rem; } }
 
-/*
-$prueba: 0;
-
-[aria-expanded = "true"] {
-    $prueba: 1;
-}
-
-@if $prueba == 1{
-    p{
-    background-color: red;
-    background-size: 50% 7%;
-    color: aqua;
-    }
-}
-*/
 /*FOOTER*/
 footer {
   padding: 0.2% 2%;
@@ -207,7 +194,6 @@ footer {
   border: 2px #3aaa35 solid;
   border-radius: 50%;
   align-self: center;
-  /*transform: scale(1);*/
   transition: all ease 0.5s; }
 
 .section__div--networks img {
@@ -416,11 +402,9 @@ footer {
 .section--contactForm {
   background-image: url(../img/fondoParque.png);
   background-size: cover;
-  background-position: left;
-  /*height:100%;*/ }
+  background-position: left; }
   .section--contactForm .div--contactNetworks {
     flex-basis: 10%;
-    /*height: 80%;*/
     transform: scale(1);
     transition: all ease .1s;
     gap: 4rem; }
@@ -439,7 +423,6 @@ footer {
     .section--contactForm .div--contactNetworks img {
       width: 100%; }
   .section--contactForm .div--contactTitle {
-    /*height: 80%;*/
     gap: 2rem;
     flex-basis: 30%; }
     @media screen and (max-width: 767.98px) {
